@@ -1,0 +1,7 @@
+{% extends "base.html" %}{% block title %}Secure payment{% endblock %}{% block content %}
+<div class="auth-wrap"><div class="auth-card"><span class="eyebrow">SECURE CHECKOUT</span><h1>Complete payment</h1><p>Print job {{ job.code }} · {{ money(job.total_paise) }}</p><button id="rzp-button" class="btn full">Open Razorpay checkout</button><p class="muted small">Payment is verified by the CampusCart server after checkout.</p></div></div>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script><script>
+const options={key:{{ key_id|tojson }},amount:{{ job.total_paise }},currency:"INR",name:"CampusCart",description:"Print job {{ job.code }}",order_id:{{ gateway_order.id|tojson }},
+handler:async function(response){const r=await fetch("{{ url_for('verify_razorpay') }}",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(response)});const d=await r.json();if(d.ok){location.href=d.redirect}else{alert(d.message||"Payment verification failed.")}},
+modal:{ondismiss:function(){alert("Checkout closed. Your print job remains unpaid.")}}};
+document.getElementById("rzp-button").onclick=()=>new Razorpay(options).open();</script>{% endblock %}

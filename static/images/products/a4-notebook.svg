@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#eff6ff"/><stop offset="100%" stop-color="#dbeafe"/></linearGradient>
+    <linearGradient id="cov" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3b82f6"/><stop offset="100%" stop-color="#1d4ed8"/></linearGradient>
+  </defs>
+  <rect width="240" height="160" rx="14" fill="url(#bg)"/>
+  <ellipse cx="122" cy="142" rx="56" ry="6" fill="#1e3a8a" opacity=".14"/>
+  <!-- Pages edge -->
+  <rect x="76" y="22" width="94" height="114" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <!-- Cover -->
+  <rect x="72" y="18" width="92" height="114" rx="8" fill="url(#cov)"/>
+  <!-- Spine -->
+  <rect x="72" y="18" width="14" height="114" rx="4" fill="#1e3a8a"/>
+  <!-- Label -->
+  <rect x="98" y="40" width="52" height="32" rx="5" fill="#ffffff"/>
+  <line x1="106" y1="52" x2="142" y2="52" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="106" y1="62" x2="132" y2="62" stroke="#cbd5e1" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- A4 badge -->
+  <text x="124" y="106" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="800" fill="#bfdbfe">A4</text>
+</svg>

@@ -1,0 +1,3 @@
+{% extends "base.html" %}{% block title %}Log in{% endblock %}{% block content %}
+<div class="auth-wrap"><div class="auth-card"><span class="eyebrow">WELCOME BACK</span><h1>Log in to CampusCart</h1><p class="muted">Your campus essentials are just a few clicks away.</p><form method="post" class="form">
+<label>Email address<input type="email" name="email" required autocomplete="email"></label><label>Password<input type="password" name="password" required autocomplete="current-password"></label><button class="btn full">Log in</button></form><p class="auth-foot">New here? <a href="{{ url_for('register') }}">Create an account</a></p></div></div>{% endblock %}

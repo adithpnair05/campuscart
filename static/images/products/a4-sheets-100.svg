@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f8fafc"/><stop offset="100%" stop-color="#e2e8f0"/></linearGradient>
+  </defs>
+  <rect width="240" height="160" rx="14" fill="url(#bg)"/>
+  <ellipse cx="120" cy="138" rx="64" ry="7" fill="#334155" opacity=".12"/>
+  <!-- Stack of sheets -->
+  <rect x="66" y="40" width="108" height="92" rx="5" fill="#cbd5e1"/>
+  <rect x="66" y="35" width="108" height="92" rx="5" fill="#e2e8f0"/>
+  <rect x="66" y="30" width="108" height="92" rx="5" fill="#f1f5f9"/>
+  <rect x="66" y="24" width="108" height="92" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <!-- Corner fold -->
+  <polygon points="154,24 174,44 154,44" fill="#e2e8f0"/>
+  <!-- Band -->
+  <rect x="66" y="62" width="108" height="26" fill="#315fbd"/>
+  <text x="120" y="79" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="800" fill="#ffffff">A4 · 100 SHEETS</text>
+</svg>

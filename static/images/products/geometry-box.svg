@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#eef2ff"/><stop offset="100%" stop-color="#e0e7ff"/></linearGradient>
+    <linearGradient id="box" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4f46e5"/><stop offset="100%" stop-color="#312e81"/></linearGradient>
+  </defs>
+  <rect width="240" height="160" rx="14" fill="url(#bg)"/>
+  <ellipse cx="120" cy="134" rx="74" ry="7" fill="#312e81" opacity=".15"/>
+  <!-- Tin box -->
+  <rect x="44" y="40" width="152" height="84" rx="12" fill="url(#box)"/>
+  <rect x="52" y="48" width="136" height="68" rx="8" fill="#ffffff" opacity=".12"/>
+  <!-- Protractor icon -->
+  <path d="M74 102 A24 24 0 0 1 122 102 Z" fill="none" stroke="#c7d2fe" stroke-width="3"/>
+  <line x1="74" y1="102" x2="122" y2="102" stroke="#c7d2fe" stroke-width="3"/>
+  <!-- Compass icon -->
+  <line x1="152" y1="62" x2="138" y2="104" stroke="#e0e7ff" stroke-width="3" stroke-linecap="round"/>
+  <line x1="152" y1="62" x2="166" y2="104" stroke="#e0e7ff" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="152" cy="60" r="5" fill="#a5b4fc"/>
+  <line x1="143" y1="86" x2="161" y2="86" stroke="#c7d2fe" stroke-width="2"/>
+</svg>
